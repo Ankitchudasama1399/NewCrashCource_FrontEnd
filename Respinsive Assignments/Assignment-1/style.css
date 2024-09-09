@@ -1,0 +1,117 @@
+#headre {
+  width: 90%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.images {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 20px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+#perant {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 20px;
+}
+
+#perant>div {
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#perant>div>img+p {
+  font-weight: bold;
+  margin-bottom: -10px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.logo1 {
+  width: 100%;
+}
+
+/* MEDIUM SCREEN ***********************************************************************************/
+@media all and (min-width:600px) and (max-width:950px) {
+  #headre {
+    width: 90%;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .images {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 20px;
+    margin: auto;
+  }
+
+  #perant {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
+  }
+
+}
+
+/* SMALL SCREEN **************************************************************************/
+@media all and (min-width:280px) and (max-width:600px) {
+  #headre {
+    width: 100%;
+    margin: auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    margin: auto;
+  }
+
+  #perant {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
+  }
+}
